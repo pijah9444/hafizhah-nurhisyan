@@ -1,0 +1,32 @@
+[
+    {
+        "nama": "hafizhah nurhisyan",
+        "umur": 21,
+        "nim":2217020022,
+        "fakultas": "sains dan teknologi",
+        "hobby": [
+            "gaming",
+            "baca novel",
+            "traveling"
+        ],
+        "pembimbing": {
+            "pembimbingkp1": "aini",
+            "pembimbingkp2": "shinta"
+        }
+    },
+    {
+        "nama": "hafizhah nurhisyan",
+        "umur": 21,
+        "nim": "2217020022",
+        "prodi":"sistem informasi",
+        "hobby": [
+            "gaming",
+            "baca novel"
+        ],
+        "pembimbing": {
+            "pembimbingkp1": "aini",
+            "pembimbing2": "shinta"
+        }
+    }
+]
+    
