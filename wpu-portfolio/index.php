@@ -19,6 +19,16 @@ $subscribers = $channelInfo['items'][0]['statistics']['subscriberCount'] ?? '0';
 
 $latestVideoInfo = get_CURL("https://www.googleapis.com/youtube/v3/search?key=$apiKey&channelId=$channelId&maxResults=1&order=date&part=snippet");
 $latestVideoId = $latestVideoInfo['items'][0]['id']['videoId'] ?? '';
+
+//instagram
+
+$clientID = "9857622017649389";
+$accesToken="IGAAdzFjZAIURtBZAE12YVZArT1Q3aUVjRC1pblRoUUNjaXZAUZA3Q3ZAnZA4UDRhZAnMwNG9lY2JEVU1xNmlOSFQwTHh1ZAzJIR1VJbWNucFR4OVhpYzUtQkxqTFBweHNMcHMxOTNzQnRheU1UcVRjQU1pdFNpT3B3UU10aUFGVDVSMUpuMAZDZD";
+
+$result= get_CURL("https://graph.instagram.com/v22.0/me?fields=username,profile_picture_url,followers_count&access_token=IGAAdzFjZAIURtBZAE12YVZArT1Q3aUVjRC1pblRoUUNjaXZAUZA3Q3ZAnZA4UDRhZAnMwNG9lY2JEVU1xNmlOSFQwTHh1ZAzJIR1VJbWNucFR4OVhpYzUtQkxqTFBweHNMcHMxOTNzQnRheU1UcVRjQU1pdFNpT3B3UU10aUFGVDVSMUpuMAZDZD
+");
+
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -65,14 +75,17 @@ $latestVideoId = $latestVideoInfo['items'][0]['id']['videoId'] ?? '';
         </div>
         <div class="row justify-content-center">
           <div class="col-md-5">
-            <p>Saya adalah pribadi yang selalu percaya bahwa tidak ada yang tidak bisa dilakukan selama saya berani mencoba...</p>
+            <p>Saya adalah seorang mahasiswa yang memiliki semangat belajar tinggi, pribadi yang gigih, dan percaya bahwa tidak ada hal yang mustahil selama saya mau mencoba. Bagi saya, setiap proses adalah pengalaman berharga yang membentuk siapa saya hari ini.Saya senang mengeksplorasi hal baru, terbuka terhadap tantangan, dan memiliki fleksibilitas dalam bekerja baik secara individu maupun kolaboratif dalam tim. .</p>
           </div>
           <div class="col-md-5">
-            <p>Saya fleksibel dalam bekerja, baik secara individu maupun dalam tim...</p>
+            <p>Selain studi, saya juga aktif membangun identitas digital melalui media sosial, termasuk YouTube, sebagai wadah untuk menyalurkan kreativitas dan komunikasi. Saya percaya bahwa teknologi dan konten visual adalah jembatan untuk terhubung dan menginspirasi lebih banyak orang.</p>
           </div>
         </div>
       </div>
     </section>
+
+
+    <!-- / YT & IG -->
 
     <section class="social bg-light" id="social">
       <div class="container">
@@ -102,8 +115,44 @@ $latestVideoId = $latestVideoInfo['items'][0]['id']['videoId'] ?? '';
             </div>
           </div>         
         </div>
+        </div>
+  </div>
+  </div>
+  </div>
+  </section>
+  
+  <!-- Project WPU-Hut -->
+  <section class="projects bg-purple" id="projects">
+    <div class="container">
+      <div class="row pt-4 mb-4">
+        <div class="col text-center">
+          <h2>Projects</h2>
+        </div>
       </div>
-    </section>
+      
+      <div class="row justify-content-center">
+
+    <div class="col-md-4 mb-4">
+        <div class="card">
+        <img src="img/thumbs/pizzaproject.png" class="card-img-top" alt="WPU-Hut">
+        <div class="card-body">
+            <h5 class="card-title">Pizza json</h5>
+            <p class="card-text">Proyek ini merupakan aplikasi pemesanan pizza sederhana yang dibuat dengan menggunakan 
+            <a href="http://localhost/hafizhah-nurhisyan/wpu-hut/latihan2.html" class="btn btn-primary" target="_blank">Project PIzza</a>
+        </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card">
+        <img src="img/thumbs/projectmovie.png" class="card-img-top" alt="WPU-movie">
+        <div class="card-body">
+            <h5 class="card-title">search movie<</h5>
+            <p class="card-text">Proyek ini adalah aplikasi pencarian film sederhana yang terintegrasi dengan OMDb API menggunakan API key, memungkinkan.
+            <a href="http://localhost/hafizhah-nurhisyan/wpu-movie/" class="btn btn-primary" target="_blank">Project Movie</a>
+        </div>
+        </div>
+    </div>
+  
 
     <section class="MyFavouritePet" id="MyFavouritePet">
       <div class="container">
